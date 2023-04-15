@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      .btn{
+        margin-top: 20px;
+      }
+
+      .text-center{
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body style="background-color: black">
+    <div>
+      <div class="p-3 ml-5">
+        <h1 class="text-white">EX 1:</h1>
+        <h2 class="text-white">Tính tiền lương nhân viên</h2>
+      </div>
+      <div class="form-group bg-light p-3 m-auto w-25">
+        <div for="" class="text-center">SALARY</div> <br>
+        <label for="">Day of work: </label>
+        <input type="number" name="" id="salaryDay" value="" class="form-control" placeholder="" aria-describedby="helpId">
+        <label for="">Salary per day: </label>
+        <input type="number" name="" id="salaryPerDay" value="" class="form-control" placeholder="" aria-describedby="helpId">
+        <div for="" id="salaryShow"></div>
+        <button id="salaryBtn" class="btn btn-dark">Calculate</button>
+      </div>
+    </div>
+
+    <div class="mt-5">
+       <div class="p-3 ml-5">
+        <h1 class="text-white">EX 2:</h1>
+        <h2 class="text-white">Tính giá trị trung bình</h2>
+      </div>
+      <div class="form-group bg-light p-3 mt-3 m-auto w-25">
+        <div for="" class="text-center">AVERAGE</div>
+        <label for=""  class="mt-2">Number 1: </label>
+        <input type="number" name="" id="number1" value="" class="form-control" placeholder="enter a number" aria-describedby="helpId">
+        <label for=""  class="mt-2">Number 2: </label>
+        <input type="number" name="" id="number2" value="" class="form-control" placeholder="enter a number" aria-describedby="helpId">
+        <label for=""  class="mt-2">Number 3: </label>
+        <input type="number" name="" id="number3" value="" class="form-control" placeholder="enter a number" aria-describedby="helpId">
+        <label for=""  class="mt-2">Number 4: </label>
+        <input type="number" name="" id="number4" value="" class="form-control" placeholder="enter a number" aria-describedby="helpId">
+        <label for=""  class="mt-2">Number 5: </label>
+        <input type="number" name="" id="number5" value="" class="form-control" placeholder="enter a number" aria-describedby="helpId">
+        <button class="btn btn-dark" id="averageBtn">Calculate</button>
+      </div>
+    </div>
+
+    <div class="mt-5">
+       <div class="p-3 ml-5">
+        <h1 class="text-white">EX 3:</h1>
+        <h2 class="text-white">Quy đổi tiền</h2>
+      </div>
+      <div class="form-group bg-light p-3 m-auto w-25">
+        <div class="text-center">Currency Converter</div>
+        <label for="">$ To VN: </label> <br>
+        <input type="number" name="" id="currentFormat" class="form-control" placeholder="Enter USD" aria-describedby="helpId">
+        <div id="newFormat"></div>
+        <button class="btn btn-dark" id="convertBtn">Convert</button>
+      </div>
+    </div>
+   
+    <div class="mt-5">
+      <div class="p-3 ml-5">
+        <h1 class="text-white">EX 4:</h1>
+        <h2 class="text-white">Tính diện tích, chu vi hình chữ nhật</h2>
+      </div>
+      <div class="form-group bg-light p-3 m-auto w-25">
+        <div class="text-center">Area, Perimeter rectangle</div>
+        <label for="">Length: </label> <br>
+        <input type="number" name="" id="rectangleLength" class="form-control" placeholder="Enter length" aria-describedby="helpId">
+        <label for="" class="mt-2">Width: </label> <br>
+        <input type="number" name="" id="rectangleWidth" class="form-control" placeholder="Enter width" aria-describedby="helpId">
+        <div id="rectangleShow"></div>
+        <button class="btn btn-dark" id="rectangleBtn">Calculate</button>
+      </div>
+    </div>
+
+    <div class="mt-5">
+       <div class="p-3 ml-5">
+        <h1 class="text-white">EX 5:</h1>
+        <h2 class="text-white">Tính tổng 2 ký số</h2>
+      </div>
+      <div class="form-group bg-light p-3 m-auto w-25">
+        <div class="text-center">Tổng 2 ký số</div>
+        <label for="">number: </label> <br>
+        <input type="number" name="" id="number" class="form-control" placeholder="Enter 2 digits number" aria-describedby="helpId">
+        <div id="totalShow"></div>
+        <button class="btn btn-dark" id="totalBtn">Calculate</button>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
